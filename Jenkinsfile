@@ -6,7 +6,7 @@ pipeline {
         sh '''#!/bin/sh
             chmod a+x ./gradlew
             ./gradlew clean build'''
-        archiveArtifacts 'build/libs/*.jar'
+        archiveArtifacts 'bin/*.jar'
       }
     }
 
